@@ -1,0 +1,76 @@
+body {
+    background-color: #f2f2f2;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+input[type="value"] {
+    border: none;
+    border-bottom: 2px solid blue;
+    padding: 5px;
+    text-align: left;
+    font-family: "Arial", sans-serif;
+}
+
+ul {
+    padding-left: 150px;
+    text-align: left;
+}
+
+label {
+    margin-left: 10px;
+}
+
+#resultado {
+    border: 6px double black;
+    padding: 10px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    color: blue;
+    line-height: 2;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: blue;
+}
+
+/* Adicionando estilos para dispositivos móveis usando media queries */
+@media screen and (max-width: 600px) {
+    ul {
+        padding-left: 20px; /* Ajuste o espaçamento para telas menores */
+    }
+
+    #resultado {
+        max-width: 100%; /* Garante que o resultado não ultrapasse a largura da tela */
+    }
+
+    button {
+        width: 100%; /* Faz com que o botão ocupe a largura total da tela */
+    }
+
+    input[type="value"] {
+        width: 50%;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+
+    label {
+        margin-left: 70px;
+    }
+}

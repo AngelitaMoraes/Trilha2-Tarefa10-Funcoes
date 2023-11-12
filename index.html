@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cálculo da Média Aritmética.">
+    <title>funções</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div>
+        <h1>Cálcular Média Aritmética</h1>
+        <h2>Informações importantes:</h2>
+
+        <ul>
+            <li>Não inserir valores negativos</li>
+            <li>Informar números inteiros ou com duas casas decimais</li>
+            <li>Para o cálculo menos de cinco números deixar o campo sem informações</li>
+            <li>Caso seja informado o valor "0" ou "0,00", o cálculo irá considerar na média </li>
+        </ul>
+        
+        <br>
+        
+        <label for="value">Valor 1:</label>
+        <input type="value" id="valor1" required>
+        
+        <label for="value">Valor 2:</label>
+        <input type="value" id="valor2" required>
+
+        <label for="value">Valor 3:</label>
+        <input type="value" id="valor3" required>
+
+        <label for="value">Valor 4:</label>
+        <input type="value" id="valor4" required>
+
+        <label for="value">Valor 5:</label>
+        <input type="value" id="valor5" required>
+        
+        <br>
+
+        <button onclick="calcularMedia()">Calcular Média Aritmética</button>
+        <button onclick="novoCalculo()">Novo Cálculo</button>
+    
+        <div id="resultado"></div>
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
